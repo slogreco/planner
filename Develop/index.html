@@ -24,21 +24,37 @@
 
     <!-- Timeblocks go here -->
     <div class="container">
-      <div class="input-group mb-3">
-        <div class="input-group-prepend" id="button-addon3">
-          <div class="Timeblocks" type="button"> 8:00AM </div>
+      
+      <div class="row">
+        <div class="time-block">
+          <h5 class="hour">8:00AM</h5>
         </div>
-        <input type="text" class="form-control" placeholder="add event to schedule" aria-label="Example text with two button addons"
-          aria-describedby="button-addon3">
-        <div class="input-group-prepend" id="button-addon3">
-          <button class="btn btn-outline-secondary" type="button">Save</button>
+        <div class="col-9">
+          <textarea class="event" aria-label="With textarea"></textarea>
+        </div>
+        <div class="col">
+          <button class="saveBtn">Save</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="time-block">
+          <h5 class="hour">9:00AM</h5>
+        </div>
+        <div class="col-9">
+          <textarea class="event" aria-label="With textarea"></textarea>
+        </div>
+        <div class="col">
+          <button class="saveBtn">Save</button>
         </div>
       </div>
 
+
     </div>
+    
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
