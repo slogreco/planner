@@ -33,3 +33,10 @@ function updatetime() {
     }
 }
 
+$(".saveBtn").on("click", function(){
+    let timeOfday = $(this).parent().attr("id");
+    let textContent = $("input").val();
+    // console.log(timeOfday);
+    // console.log(textContent);
+})
+
