@@ -33,14 +33,14 @@ function updatetime() {
     }
 }
 
-$(".saveBtn").on("click", function(){
+$(".saveBtn").on("click", function () {
     let timeOfday = $(this).parent().attr("id");
-    let textContent = $("#time", "input").val();
-    console.log(timeOfday);
-    console.log(textContent);
+    let textContent = $(this).siblings("input").val()
+    // console.log(timeOfday);
+    // console.log(textContent);
 
     localStorage.setItem(timeOfday, textContent);
-    
+
 })
 
 $("#8am").children("input").val(localStorage.getItem("8am"));
