@@ -38,5 +38,8 @@ $(".saveBtn").on("click", function(){
     let textContent = $("input").val();
     // console.log(timeOfday);
     // console.log(textContent);
+
+    localStorage.setItem(timeOfday, textContent);
+    
 })
 
