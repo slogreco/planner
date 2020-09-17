@@ -43,3 +43,6 @@ $(".saveBtn").on("click", function(){
     
 })
 
+$("#8am").children("input").val(localStorage.getItem("8am"));
+$("#12pm").children("input").val(localStorage.getItem("12pm"));
+
